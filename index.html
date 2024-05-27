@@ -21,9 +21,10 @@
     </div>
 
 
-    <audio id="myAudio" src="audio_toda.mp3"> </audio>
+    <!-- <audio id="myAudio" src="audio_toda.mp3"> </audio> -->
+    <audio id="myAudio" src="audio_toda.mp3" preload="auto" controls style="display:none;"></audio>
 
-    <script>
+    <!-- <script>
         function playMusic()
         {
             var audio = document.getElementById("myAudio");
@@ -33,6 +34,21 @@
 
 
 
+    </script> -->
+
+    <script>
+        function playMusic() {
+            var audio = document.getElementById("myAudio");
+            audio.play().catch(error => {
+                console.error("Audio play failed:", error);
+            });
+        }
+
+        function hideOverlay() {
+            var overlay = document.getElementById('overlay');
+            overlay.style.display = "none";
+            document.body.classList.remove("no-scroll");
+        }
     </script>
 
     <div id="head">
@@ -218,7 +234,7 @@
         }, 1000);
     </script>
     <!-- script overlay -->
-    <script>
+    <!-- <script>
         document.body.classList.add("no-scroll");
 
         function hideOverlay() {
@@ -226,6 +242,6 @@
             overlay.style.display = "none";
             document.body.classList.remove("no-scroll");
         }
-    </script>
+    </script> -->
 </body>
 </html>
