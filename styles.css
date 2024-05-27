@@ -10,7 +10,7 @@
     src: url("fonts/Ozard Bold.otf");
 }
 
-@media only screen and (max-width: 600px){
+
 
     /* Global Styles */
 body {
@@ -578,4 +578,3 @@ i{
     
 }
     
-}
