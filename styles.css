@@ -96,10 +96,16 @@ a:hover {
     border-color: whitesmoke; /* Changez la couleur de la bordure au survol */
 }
 
-
+/* 
 .hidden {
     display: none;
-}
+} */
+
+#overlay.hidden {
+    opacity: 0; /* Make overlay invisible */
+    pointer-events: none; /* Disable pointer events on the hidden overlay */
+  }
+
 
 /* Rest of your CSS styles */
 
