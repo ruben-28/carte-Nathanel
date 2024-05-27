@@ -23,13 +23,28 @@
         </a>
         
     </div>
-    
+    <script>
+        document.body.classList.add("no-scroll");
+        function hideOverlay() {
+    var overlay = document.getElementById('overlay');
+    overlay.style.display = "none";
+    document.body.classList.remove("no-scroll");
+}
+    </script>
 
 
     <!-- <audio id="myAudio" src="audio_toda.mp3"> </audio> -->
     <audio id="myAudio" src="/audio_toda.mp3"></audio>
 
-   
+   <script>
+    function playMusic() {
+    var audio = document.getElementById("myAudio");
+    audio.play().catch(error => {
+        console.error("Audio play failed:", error);
+    });
+}
+
+   </script>
 
 
 
