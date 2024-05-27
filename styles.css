@@ -1,0 +1,577 @@
+/* styles.css */
+
+@font-face {
+    font-family: 'Baguet Script';
+    src: url("fonts/Baguet Script.otf");
+}
+
+@font-face {
+    font-family: 'Ozard_bold';
+    src: url("fonts/Ozard Bold.otf");
+}
+
+/* Global Styles */
+body {
+    font-family: 'Times New Roman', Times, serif, Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    color: #333;
+    background-color: #a7a7a7cc;
+    line-height: 1.6;
+    text-align: center;
+    overflow-x: hidden; /* Prevent horizontal scroll when overlay is shown */
+}
+
+#head,#countdown, #tef, #chabbat, #soiree, #RSVP, .contact{
+    /* background-image: url("photos/fond_marbre.jpg"); */
+    /* background-image: url("photos/fond_marbre_fonce.jpg"); */
+    background-image: url("photos/close-up-black-marble-textured-background.jpg");
+}
+
+.no-scroll {
+    overflow: hidden;
+}
+
+h1, h2, p {
+    margin: 0.5em 0;
+}
+
+/* a {
+    color: #3498db;
+    text-decoration: none;
+} */
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* Overlay Styles */
+#overlay {
+    background-image: linear-gradient(rgb(0, 0, 0), rgba(51, 51, 51, 0.5));
+    background-size: cover;
+    background-position: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #fffaf4; /* Semi-transparent black background */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    z-index: 9999; /* Ensures it is on top */
+}
+
+#overlayCtnt{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: whitesmoke;
+    font-size: 8rem;
+    font-family: "Pinyon Script", cursive;
+    -webkit-text-stroke-color: #f4f4f4;
+    -webkit-text-stroke-width: 0.5px;
+}
+
+.btnLink {
+    display: inline-block; /* Assurez que l'élément reste en ligne */
+    white-space: nowrap; /* Empêche les retours à la ligne */
+    justify-content: center;
+    font-size: 3rem;
+    color: whitesmoke;
+    border: 5px solid whitesmoke; /* Ajustez l'épaisseur de la bordure */
+    padding: 0.5em 1.2em; /* Ajustez le padding pour mieux centrer le texte */
+    transition: background-color 0.3s, color 0.3s, border-color 0.3s;
+    border-radius: 5px; /* Ajoutez un léger arrondi à la bordure */
+}
+
+.btnLink:hover {
+    background-color: whitesmoke;
+    color: black;
+    text-decoration: none;
+    border-color: whitesmoke; /* Changez la couleur de la bordure au survol */
+}
+
+
+.hidden {
+    display: none;
+}
+
+/* Rest of your CSS styles */
+
+
+
+
+
+#head {
+    padding: 1em;
+    margin-top: 5%;
+    margin-bottom: 2.5%;
+    margin-left: 1%;
+    margin-right: 1%;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    height: 80vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 3rem;
+    border-radius: 90px;
+    position: relative; /* Add this line */
+}
+
+#bs\'d {
+    font-size: 0.5em;
+    direction: rtl;
+    margin-left: 1%; /* Remove the margin-left */
+    position: absolute; /* Add this line */
+    top: 0; /* Add this line */
+    right: 0; /* Add this line */
+    margin-right: 5%; /* Optional: Adjust the margin as needed */
+}
+
+
+#nom{
+    /* font-family: "Kaushan Script"; */
+    /* font-family: "Pinyon Script", cursive; */
+    font-family: "Rouge Script", cursive;
+    font-size: 6rem;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+#nom_h{
+    font-family: 'Ozard_bold', cursive;
+    font-size: 5rem;
+    margin-top: 0;
+    margin-bottom: 0;
+
+}
+
+
+#countdown {
+    border-color: #f4f4f4;
+    height: 40vh;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    font-size: 3rem;
+    background-color: white;
+    border-radius: 90px;
+    margin-top: 2.5%;
+    margin-bottom: 2.5%;
+    margin-left: 1%;
+    margin-right: 1%;
+}
+
+#svd{
+    margin-right: 2%;
+    font-size: 4.5rem;
+    font-family: 'Baguet Script' ;
+}
+
+#date{
+    font-size: 3.3rem;
+    font-family: "Pinyon Script", cursive;
+    font-weight: bold;
+    margin-right: 3px;
+}
+
+.tag {
+    width: 10vh;
+    height: 10vh;
+    padding: 1vh; /* Ajustez selon vos besoins */
+    border-radius: 10%;
+    background-color: rgb(151, 150, 150); /* #e3a988 */
+    color: white;
+    display: flex;
+    flex-direction: column; /* Disposer les enfants en colonne */
+    justify-content: center;
+    align-items: center;
+    box-sizing: border-box; /* Inclut le padding dans les dimensions du tag */
+    margin : 1px;
+}
+
+.value {
+    font-size: 1.5em; /* Ajustez selon vos besoins */
+    font-weight: bold;
+    margin-bottom: 0.5em; /* Espacement entre valeur et label */
+    font-family: "Kaushan Script";
+}
+
+.label {
+    display: block;
+    font-size: 0.8em; /* Ajustez selon vos besoins */
+    text-align: center;
+    font-family: "Kaushan Script";
+}
+
+
+#timer{
+    margin-right: 0.5%;
+}
+
+#timer .tag {
+    display: inline-block;
+    margin: 0.2em 0.15em;
+}
+
+
+
+#en_tete {
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+    margin-bottom: 0;
+}
+
+#en_tete img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+
+#tef {
+    height: 60vh;
+    margin-top: 2.5%;
+    margin-bottom: 2.5%;
+    margin-left: 1%;
+    margin-right: 1%;
+    position: relative;
+    padding: 1em;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    color: black; /* Change the text color for better contrast */
+    font-size: 3.5rem;
+    background-color: white;
+    border-radius: 90px;
+}
+
+
+#txt_tef{
+    margin-bottom: 1em;
+    margin-top: 1em;
+}
+
+#tef h1, #tef p, #tef a {
+    position: relative;
+    z-index: 2;
+}
+
+
+
+#tef a:hover {
+    text-decoration: underline;
+}
+
+#header{
+    font-family: 'Dancing Script';
+    font-size: 9rem;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+#txt_carte{
+    font-style: italic;
+    margin-bottom: 7%;
+    
+}
+
+#chabbat{
+    height: 50vh;
+    padding: 1em;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    font-size: 3.5rem;
+    border-radius: 90px;
+    margin-top: 2.5%;
+    margin-bottom: 2.5%;
+    margin-left: 1%;
+    margin-right: 1%;
+}
+
+#soiree{
+    padding: 1em;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    height: 70vh;
+    font-size: 3rem;
+    border-radius: 90px;
+    margin-top: 2.5%;
+    margin-bottom: 2.5%;
+    margin-left: 1%;
+    margin-right: 1%;
+}
+
+#nat{
+    font-family: 'Baguet Script', sans-serif;
+}
+
+
+#RSVP{
+    height: 87vh;
+    padding: 1em;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    border-radius: 90px;
+    margin-top: 2.5%;
+    margin-bottom: 2.5%;
+    margin-left: 1%;
+    margin-right: 1%;
+}
+
+#head p, #head h2, #head h1 {
+    margin: 0.5em 0;
+}
+
+#bs\'d {
+    font-size: 1.2em;
+    direction: rtl;
+}
+
+
+
+
+
+.text-container {
+    margin-bottom: 1em;
+}
+
+/* Form Styles */
+#RSVPform {
+    margin-left: 1em;
+    margin-right: 1em;
+    margin-top: 1em;
+    height: 50vh;
+    display: flex;
+    justify-content: bottom;
+    align-items: center;
+    flex-direction: column;
+}
+
+#reponseField {
+    margin-left: 1em;
+    margin-right: 1em;
+    background: #d6d6d6;
+    padding: 1em;
+    border-radius: 90px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    flex-direction: column;
+    width: 90vw; 
+    gap: 1em;
+}
+
+.name_field {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    text-align: center;
+    gap: 1em;
+}
+
+.Rlabel {
+    font-size: 250%;
+    display: block;
+    gap: 3vw;
+    text-align: left;
+}
+
+input[type="text"] {
+    height: 3vh;
+    width: 45vw;
+    border: #333;
+    font-size: 200%;
+}
+
+input[type="number"] {
+    height: 3vh;
+    width: 30vw;
+    border: #333;
+    font-size: 200%;
+}
+/* 
+input[name="Message"] {
+    width: 60vw;
+    height: 10vh;
+} */
+
+input[name="Message"] {
+    width: 60vw;
+    height: 10vh;
+    vertical-align: top;
+    text-align: left;
+    padding: 1%;
+}
+
+textarea[name="Message"] {
+    width: 60vw;
+    height: 10vh;
+    vertical-align: top;
+    text-align: left;
+    padding: 1%;
+    font-size: 150%; /* Font size for regular text */
+}
+
+textarea[name="Message"]::placeholder {
+    font-size: 200%;
+    color: #727272; /* You can change the color if needed */
+    padding: 1%;
+}
+
+
+
+.abs {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 170%;
+}
+
+.abs input[type="checkbox"] {
+    width: 2rem; /* Increase the width for better readability */
+    height: 2rem; /* Increase the height for better readability */
+    margin-right: 0.4em; /* Add space between checkbox and label */
+    font-size: 150%;
+}
+
+.check_choice {
+    display: flex;
+    justify-content: center;
+    font-size: 150%;
+    margin-bottom: 0;
+    font-style: italic;
+    font-weight: bold;
+    align-items: center;
+    text-align: center;
+}
+
+.vient{
+    font-size: 280%;
+    margin-bottom: 0;
+}
+
+.vient input[type="checkbox"]
+{
+  
+
+    width: 2rem;
+    height: 2rem;
+    margin-right: 0.3em;
+    font-size: 200%;
+    margin-left: 4%;
+}
+
+
+
+
+
+.sendemail {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 5%;
+    font-size: 200%;
+    border-radius: 5rem;
+    padding: 2% 5%;
+
+    color: black;
+    border: 2px solid black;
+    background-color: whitesmoke;
+
+}
+
+h3 {
+    font-size: 300%; 
+    margin-top: 0;
+    margin-bottom: 3%;
+    font-style: normal;
+    font-style: oblique;
+}
+
+a{
+    color: black;
+    border: 3px solid #444444;
+    padding: 3% 2%;
+    transition: background-color 0.3s, color 0.3s;
+    text-decoration: none;
+
+}
+
+a:hover{
+    background-color: #444444;
+    color: white;
+    text-decoration: none;
+}
+
+
+.contact{
+    height: 5vh;
+    width: 88vw;
+    background-color: white;
+    padding: 5%;
+    display: inline-flex;
+    justify-content: center;
+    /* display: flex; Utilisation de Flexbox */
+    /* justify-content: center; Les éléments enfants sont distribués de manière à ce que les marges extérieures soient égales */
+    border-radius: 70px;
+    font-size: 200%;
+    margin-bottom: 5%;
+    margin-left: 1%;
+    margin-right: 1%;
+    gap: 1em;
+    
+}
+
+.contactBtn{
+    text-decoration: none;
+    color: black;
+    border: 2px solid black;
+    border-radius: 5%;
+    padding: 1% 8%;
+    border-radius: 5rem;
+    /* background-color: white;
+    
+    border-radius: 5000px; */
+    font-weight: 500;
+    
+    white-space: nowrap;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    
+}
+
+.mail{
+    padding-right: 1%;
+    font-size: 110%;
+
+}
+
+.insta{
+    padding-right: 1%;
+    font-size: 100%;
+   
+}
+
+i{
+    margin-right: 10%;
+    font-size: 120%;
+}
+
+#fleche{
+    margin-right: 5%;
+    justify-content: center;
+    align-items: center;
+    
+    
+}

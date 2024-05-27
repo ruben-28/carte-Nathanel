@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>BM Nathanel</title>
+    <title>Home</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Kaushan+Script&family=Pinyon+Script&family=Rouge+Script&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" 
+    integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" 
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <div id="overlay">
+        <h1 id="overlayCtnt">Bar Mitsvah <br> Nathanel</h1>
+        <a class="btnLink" onclick="hideOverlay(); playMusic();"> 
+            <i class="fa-solid fa-arrow-right"></i> voir l'invitation 
+        </a>
+    </div>
+
+
+    <audio id="myAudio" src="audio_toda.mp3"> </audio>
+
+    <script>
+        function playMusic()
+        {
+            var audio = document.getElementById("myAudio");
+            audio.play();
+        }
+
+
+
+
+    </script>
+
+    <div id="head">
+        <div id="bs'd">
+            <p id="bs'd"> בס"ד</p>
+        </div>
+        <h2> 
+            Katy, Patrick <br>
+            Ruben, Ornella et Linoy <br>
+        </h2>
+        <p>ont la joie de vous faire part de la Bar Mitsva de leur fils et frère <br></p>
+        <h1 id="nom">
+            Nathanel Haim Isaac <br>
+        </h1>
+        <h1 id="nom_h">
+            נתנאל חיים יצחק <br>
+        </h1>
+        <h2>
+            qui aura lieu le <br>
+            14 Novembre 2024
+        </h2>
+    </div>
+
+    <div id="countdown">
+        <div class="text-container">
+            <h2 id="svd">SAVE THE DATE</h2>
+            <p id="date">Lundi 24 juin 2024</p>
+        </div>
+        <div id="timer">
+            <div class='tag'>
+                <span class='value'>-</span> 
+                <span class='label'>Jours</span>
+            </div>
+            <div class='tag'>
+                <span class='value'>-</span>  
+                <span class='label'>Heures</span>
+            </div>
+            <div class='tag'>
+                <span class='value'>-</span> 
+                <span class='label'>Minutes</span>  
+            </div>
+            <div class='tag'>
+                <span class='value'>-</span> 
+                <span class='label'>Secondes</span>   
+            </div>
+        </div>
+    </div>
+
+    <div id="tef">
+        <div id="en_tete">
+            <img src="photos/en_tete_1.png">
+        </div>
+        
+        <p id="txt_tef">
+            La mise des téfilines suivie d'un petit déjeuner aura lieu bzh' le<br>
+            <b>Jeudi 14 Novembre 2024</b> <br>
+            en la synagogue Malah'i <br> 
+            41 rue des bordeaux - 94220 Charenton le pont
+        </p>
+        <a href="https://waze.com/ul/hu09twzg4m" target="_blank"><i id="fleche" class="fa-solid fa-arrow-right"></i>Voir l'itineraire </a>
+    </div>
+
+    <div id="chabbat">
+        <h1 id="header"> Chabbat </h1>
+        <p id="txt_carte">
+            Nathanel lira la paracha Vayéra <br>
+            le Samedi 16 Novembre à 9 heures <br> 
+            en la synagogue Malah'i <br>
+            41 rue des bordeaux - 94220 charenton le pont<br>
+            un Kiddouch suivera l'office.
+        </p>
+    </div>
+
+    <div id="soiree">
+        <h1 id="header"> Réception</h1>
+        <p id="txt_carte">
+            Katy et Patrick<br>
+            seraient heureux de vous convier<br>
+            à la soirée donnée el'honneur de<br>
+        </p>
+        <h1 id="nom">Nathanel</h1>
+        <p id="txt_carte">
+            le Lundi 18 Novembre 2024 à partir de 19 heures <br>
+            dans les Salons de l'hotel Hilton Roissy<br>
+            8 rue de Rome - 93320 Aubervilliers
+        </p>
+
+        <a href="https://waze.com/ul/hu09yf4nd2" target="_blank"><i id="fleche" class="fa-solid fa-arrow-right"></i>Voir l'itineraire </a>
+    </div>
+
+    <div id="RSVP">
+        <h1 id="header">Réponse</h1>
+        <h3>Réponse souhaitée dès réception</h3>
+        <form id="RSVPform" method="post">
+            <div id="reponseField">
+                <div class="name_field">
+                    <div>
+                        <label class="Rlabel">Nom:<br></label>
+                        <input type="text" name="nom">
+                    </div>
+                    
+                    <div>
+                        <label class="Rlabel">Prénom:<br></label>
+                        <input type="text" name="prénom">
+                    </div>
+                    
+                </div>
+                
+                <div class="abs">
+                    <input type="checkbox">
+                    <label class="abs" id="abs" name="abs">Ne pourront pas Assister</label>
+                </div>
+                
+                <div class="vient">
+                    <label class="check_choice">
+                        Assisteront à : 
+                    </label>
+                    
+                    <input type="checkbox">
+                    <label for="" id="chkBoxTef" class="chkBoxTef" name="chkBoxTef">La Mise des Téfilines</label>
+                   
+                    <input type="checkbox">
+                    <label for="" id="chkBoxChabbat" class="chkBoxChabbat" name="chkBoxChabbat">Au Chabbat</label>
+
+
+                    <input type="checkbox">
+                    <label for="" id="chkBoxSoiree" class="chkBoxSoiree" name="chkBoxSoiree">La Soirée</label> 
+                    
+                </div>
+                
+                <label for="" class="Rlabel">Nombre de personnes :</label>
+                <input type="number">
+                
+                
+                <label for="Message" class="Rlabel">Message au Bar Mitsvah :</label>
+                <textarea name="Message" placeholder="Mazal Tov !!!"></textarea>
+                <button id="sendEmailBtn" class="sendemail" type="submit" action="mailertest.php">Envoyer</button>
+            </div>
+        </form>
+    </div>
+
+    <div class="contact">
+        <a href="mailto:invitecard.website@gmail.com" class="contactBtn"><i class="fa-regular fa-envelope mail"></i>CONTACT ME</a>
+        <a href="https://www.instagram.com/ruben_bensimon/" class="contactBtn" target="_blank"><i class="fa-brands fa-instagram insta"></i>CONTACT ME</a>
+    </div>
+
+
+    <!-- script countdown  -->
+    <script>
+        let countDown = new Date("Nov 14, 2024 09:00:00").getTime();
+        let x = setInterval(function() {
+            let now = new Date().getTime();
+            let distance = countDown - now;
+            let days = Math.floor(distance / (1000 * 60 * 60 * 24));
+            let hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+            let minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+            let seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+            document.querySelector("#timer").innerHTML = `
+                <div class='tag'>
+                    <span class='value'>${days}</span> 
+                    <span class='label'>Jours</span>
+                </div>
+                <div class='tag'>
+                    <span class='value'>${hours}</span>  
+                    <span class='label'>Heures</span>
+                </div>
+                <br>
+                <div class='tag'>
+                    <span class='value'>${minutes}</span> 
+                    <span class='label'>Minutes</span>  
+                </div>
+                <div class='tag'>
+                    <span class='value'>${seconds}</span> 
+                    <span class='label'>Secondes</span>   
+                </div>
+            `;
+
+            if (distance < 0) {
+                clearInterval(x);
+                document.querySelector("#timer").innerHTML = "EXPIRED";
+            }
+        }, 1000);
+    </script>
+    <!-- script overlay -->
+    <script>
+        document.body.classList.add("no-scroll");
+
+        function hideOverlay() {
+            var overlay = document.getElementById('overlay');
+            overlay.style.display = "none";
+            document.body.classList.remove("no-scroll");
+        }
+    </script>
+</body>
+</html>
