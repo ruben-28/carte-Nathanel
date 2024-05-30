@@ -19,16 +19,39 @@ body {
     padding: 0;
     color: #333;
     /* background-color: #a7a7a7cc; */
-    background-color: #F0DDC5;
+    /* background-color: #ffeed8;  */
     line-height: 1.6;
     text-align: center;
     overflow-x: hidden; /* Prevent horizontal scroll when overlay is shown */
 }
 
 #head,#countdown, #tef, #chabbat, #soiree, #RSVP, .contact{
-    /* background-image: url("photos/fond_marbre.jpg"); */
+    background-image: url("photos/fond_marbre.jpg");
     /* background-image: url("photos/fond_marbre_fonce.jpg"); */
-    background-image: url("photos/marbre_beige.jpg");
+
+    /* background-image: url("photos/marbre_beige.jpg"); */
+       /* background-image: url("photos/marbre_3.jpg"); j'aime pas */
+    
+    /* background-image: url("photos/marbre_4.jpg"); same */
+    /* background-image: url("photos/marbre_6.jpg"); non */
+
+
+
+
+   /* background-image: url("photos/marbre_1.jpg");   /*fond sympa voir pour les tag la réponse et le fond*/
+    
+    /* background-image: url("photos/marbre_2.jpg"); fond style mariage peut etre changer couleur police */
+    
+
+    
+    /* background-image: url("photos/marbre_5.jpg");  */
+    
+   
+    
+    /* background-image: url("photos/marbre_7.jpg"); sympa*/
+    box-shadow: #333;
+    background-size: cover;    
+
 }
 
 .no-scroll {
