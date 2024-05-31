@@ -24,14 +24,7 @@
         
     </div>
 
-
-
-
-    <!-- <audio id="myAudio" src="audio_toda.mp3"> </audio> -->
     <audio id="myAudio" src="audio_toda.mp3" type="audio/mp3"></audio>
-
-
-
 
     <div id="head">
         <div id="bs'd">
@@ -124,24 +117,24 @@
     <div id="RSVP">
         <h1 id="header">Réponse</h1>
         <h3>Réponse souhaitée dès réception</h3>
-        <form id="RSVPform" method="post">
+        <form id="RSVPform" method="post" action="https://script.google.com/macros/s/AKfycbyrINamC4hO-cG3FLl9LiVLKEaFzM2kUaibbzGej1WM4KSiijUDhudtkk91ZxwZJPJi/exec">
             <div id="reponseField">
                 <div class="name_field">
                     <div>
-                        <label class="Rlabel">Nom:<br></label>
-                        <input type="text" name="nom">
+                        <label for="Nom" class="Rlabel">Nom:<br></label>
+                        <input type="text" name="Nom">
                     </div>
                     
                     <div>
-                        <label class="Rlabel">Prénom:<br></label>
-                        <input type="text" name="prénom">
+                        <label for="Prenom" class="Rlabel">Prénom:<br></label>
+                        <input type="text" name="Prenom">
                     </div>
                     
                 </div>
                 
                 <div class="abs">
-                    <input type="checkbox">
-                    <label class="abs" id="abs" name="abs">Ne pourront pas Assister</label>
+                    <input type="checkbox" name="abs">
+                    <label class="abs" id="abs">Ne pourront pas Assister</label>
                 </div>
                 
                 <div class="vient">
@@ -149,25 +142,24 @@
                         Assisteront à : 
                     </label>
                     
-                    <input type="checkbox">
-                    <label for="" id="chkBoxTef" class="chkBoxTef" name="chkBoxTef">La Mise des Téfilines</label>
+                    <input type="checkbox" name="chkBoxTef">
+                    <label for="chkBoxTef" class="chkBoxTef">La Mise des Téfilines</label>
                    
-                    <input type="checkbox">
-                    <label for="" id="chkBoxChabbat" class="chkBoxChabbat" name="chkBoxChabbat">Au Chabbat</label>
+                    <input type="checkbox" name="chkBoxChabbat">
+                    <label for="chkBoxChabbat" class="chkBoxChabbat">Au Chabbat</label>
 
-
-                    <input type="checkbox">
-                    <label for="" id="chkBoxSoiree" class="chkBoxSoiree" name="chkBoxSoiree">La Soirée</label> 
+                    <input type="checkbox" name="chkBoxSoiree">
+                    <label for="chkBoxSoiree" class="chkBoxSoiree">La Soirée</label> 
                     
                 </div>
                 
-                <label for="" class="Rlabel">Nombre de personnes :</label>
-                <input type="number">
+                <label for="nbr" class="Rlabel">Nombre de personnes :</label>
+                <input type="number" name="nbr">
                 
                 
                 <label for="Message" class="Rlabel">Message au Bar Mitsvah :</label>
                 <textarea name="Message" placeholder="Mazal Tov !!!"></textarea>
-                <button id="sendEmailBtn" class="sendemail" type="submit" action="mailertest.php">Envoyer</button>
+                <button id="sendEmailBtn" class="sendemail" type="submit">Envoyer</button>
             </div>
         </form>
     </div>
@@ -176,7 +168,6 @@
         <a href="mailto:invitecard.website@gmail.com" class="contactBtn"><i class="fa-regular fa-envelope mail"></i>CONTACT ME</a>
         <a href="https://www.instagram.com/ruben_bensimon/" class="contactBtn" target="_blank"><i class="fa-brands fa-instagram insta"></i>CONTACT ME</a>
     </div>
-
 
     <script src="js/countdown.js"></script>
     <script src="js/hideOverlay.js"></script>
