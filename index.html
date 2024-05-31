@@ -133,7 +133,7 @@
                 </div>
                 
                 <div class="abs">
-                    <input type="checkbox" name="abs">
+                    <input type="checkbox" id="abs" name="abs">
                     <label class="abs" id="abs">Ne pourront pas Assister</label>
                 </div>
                 
@@ -142,13 +142,13 @@
                         Assisteront à : 
                     </label>
                     
-                    <input type="checkbox" name="chkBoxTef">
+                    <input type="checkbox" id="chkBoxTef" name="chkBoxTef">
                     <label for="chkBoxTef" class="chkBoxTef">La Mise des Téfilines</label>
                    
-                    <input type="checkbox" name="chkBoxChabbat">
+                    <input type="checkbox" id="chkBoxChabbat" name="chkBoxChabbat">
                     <label for="chkBoxChabbat" class="chkBoxChabbat">Au Chabbat</label>
 
-                    <input type="checkbox" name="chkBoxSoiree">
+                    <input type="checkbox" id="chkBoxSoiree" name="chkBoxSoiree">
                     <label for="chkBoxSoiree" class="chkBoxSoiree">La Soirée</label> 
                     
                 </div>
@@ -162,6 +162,14 @@
                 <button id="sendEmailBtn" class="sendemail" type="submit">Envoyer</button>
             </div>
         </form>
+
+        <div id="fromSent" class="hidden">
+            <h2 id="success">Votre réponse a bien été envoyée</h2>
+            <p id="success">Merci de votre réponse</p>
+
+            <h2 id="fail"> Une erreur est survenue</h2>
+            <p id="fail">reessayez plus tard</p>
+        </div>
     </div>
 
     <div class="contact">
