@@ -437,6 +437,12 @@ input[type="text"] {
     width: 45vw;
     border: #333;
     font-size: 200%;
+    margin-bottom: 1em;
+    border-radius: 15px;
+}
+
+#nomInput {
+    margin-top: 1em;
 }
 
 input[type="number"] {
@@ -444,7 +450,15 @@ input[type="number"] {
     width: 30vw;
     border: #333;
     font-size: 200%;
+    border-radius: 15px;
+    margin-bottom: 1em;
+    
 }
+#nbrGuests{
+    margin-top: 1em;
+
+}
+
 /* 
 input[name="Message"] {
     width: 60vw;
@@ -466,12 +480,14 @@ textarea[name="Message"] {
     text-align: left;
     padding: 1%;
     font-size: 150%; /* Font size for regular text */
+    border-radius: 15px;
 }
 
 textarea[name="Message"]::placeholder {
     font-size: 200%;
     color: #727272; /* You can change the color if needed */
     padding: 1%;
+    
 }
 
 
@@ -546,6 +562,14 @@ textarea[name="Message"]::placeholder {
     font-size: 100%;
 }
 
+.chkboxField{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    text-align: center;
+    gap: 0.5em;
+}
 
 
 

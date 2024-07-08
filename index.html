@@ -4,6 +4,7 @@
     <title>BM Nathanel</title>
     
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -121,13 +122,13 @@
             <div id="reponseField">
                 <div class="name_field">
                     <div>
-                        <label for="Nom" class="Rlabel">Nom:<br></label>
-                        <input type="text" name="Nom">
+                        <!-- <label for="Nom" class="Rlabel">Nom:<br></label> -->
+                        <input type="text" name="Nom" placeholder="Nom" id="nomInput">
                     </div>
                     
                     <div>
-                        <label for="Prenom" class="Rlabel">Prénom:<br></label>
-                        <input type="text" name="Prenom">
+                        <!-- <label for="Prenom" class="Rlabel">Prénom:<br></label> -->
+                        <input type="text" name="Prenom" placeholder="Prénom">
                     </div>
                     
                 </div>
@@ -139,35 +140,37 @@
                 
   
                 
-                <!-- <div class="vient">
-                    <label class="check_choice">Assisteront à :</label>
-                    <div class="checkbox-container">
-                        <input type="checkbox" id="chkBoxTef" name="chkBoxTef">
-                        <label for="chkBoxTef" class="chkBoxTef">La Mise des Téfilines</label>
-                    </div>
-                    <div class="checkbox-container">
-                        <input type="checkbox" id="chkBoxChabbat" name="chkBoxChabbat" onclick="toggleDiv('presenceChabbat')">
-                        <label for="chkBoxChabbat" class="chkBoxChabbat">Au Chabbat</label>
-                    </div>
-                    <div id="presenceChabbat" class="hidden">
-                        <label for="AdultesChabbat">Nombre d'Adultes</label>
-                        <input type="number" name="Adultes" id="AdultesChabbat">
-                        <label for="EnfantsChabbat">Nombre d'Enfants</label>
-                        <input type="number" name="Enfants" id="EnfantsChabbat">
-                    </div>
-                    <div class="checkbox-container">
-                        <input type="checkbox" id="chkBoxSoiree" name="chkBoxSoiree" onclick="toggleDiv('presenceSoiree')">
-                        <label for="chkBoxSoiree" class="chkBoxSoiree">La Soirée</label>
-                    </div>
-                    <div id="presenceSoiree" class="hidden">
-                        <label for="AdultesSoiree">Nombre d'Adultes</label>
-                        <input type="number" name="Adultes" id="AdultesSoiree">
-                        <label for="EnfantsSoiree">Nombre d'Enfants</label>
-                        <input type="number" name="Enfants" id="EnfantsSoiree">
-                    </div>
-                </div> -->
-
                 <div class="vient">
+                    <label class="check_choice">Assisteront à :</label>
+                    <div class="chkboxField">
+                        <div class="checkbox-container">
+                            <input type="checkbox" id="chkBoxTef" name="chkBoxTef">
+                            <label for="chkBoxTef" class="chkBoxTef">La Mise des Téfilines</label>
+                        </div>
+                        <div class="checkbox-container">
+                            <input type="checkbox" id="chkBoxChabbat" name="chkBoxChabbat"> <!--onclick="toggleDiv('presenceChabbat')"-->
+                            <label for="chkBoxChabbat" class="chkBoxChabbat">Au Chabbat</label>
+                        </div>
+                        <div id="presenceChabbat" class="hidden">
+                            <label for="AdultesChabbat">Nombre d'Adultes</label>
+                            <input type="number" name="Adultes" id="AdultesChabbat">
+                            <label for="EnfantsChabbat">Nombre d'Enfants</label>
+                            <input type="number" name="Enfants" id="EnfantsChabbat">
+                        </div>
+                        <div class="checkbox-container">
+                            <input type="checkbox" id="chkBoxSoiree" name="chkBoxSoiree"> <!--onclick="toggleDiv('presenceSoiree')"-->
+                            <label for="chkBoxSoiree" class="chkBoxSoiree">La Soirée</label>
+                        </div>
+                        <div id="presenceSoiree" class="hidden">
+                            <label for="AdultesSoiree">Nombre d'Adultes</label>
+                            <input type="number" name="Adultes" id="AdultesSoiree">
+                            <label for="EnfantsSoiree">Nombre d'Enfants</label>
+                            <input type="number" name="Enfants" id="EnfantsSoiree">
+                        </div>
+                    </div>
+                </div>
+
+                <!-- <div class="vient">
                     <label class="check_choice">Assisteront à :</label>
                     <div class="checkbox-container">
                         <input type="checkbox" id="chkBoxTef" name="chkBoxTef">
@@ -193,11 +196,11 @@
                         <label for="EnfantsSoiree">Nombre d'Enfants</label>
                         <input type="number" name="Soiree - Enfants" id="EnfantsSoiree">
                     </div>
-                </div>
+                </div> -->
                 
                 
-                <!-- <label for="nbr" class="Rlabel">Nombre de personnes :</label>
-                <input type="number" name="nbr"> -->
+                <label for="nbr" class="Rlabel" id="nbrGuests">Nombre de personnes :</label>
+                <input type="number" name="nbr"> 
                 
                 
                 <label for="Message" class="Rlabel">Message au Bar Mitsvah :</label>
@@ -225,6 +228,6 @@
     <script src="js/playMusic.js"></script>
     <script src="js/check.js"></script>
     <!-- <script src="js/submitForm.js"></script> -->
-    <script src="js/hiddenResponses.js"></script>
+    <!-- <script src="js/hiddenResponses.js"></script> -->
 </body>
 </html>
